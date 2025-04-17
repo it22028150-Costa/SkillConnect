@@ -1,6 +1,8 @@
 /* HomePage.css */
 
 /* Posts list container */
+
+/* Main wrapper for the posts list */
 .postsBox {
     display: flex;
     flex-direction: column;

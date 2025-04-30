@@ -5,7 +5,7 @@ const AboutUs = () => {
     <div
       className="w-full h-screen bg-cover bg-center text-white flex flex-col justify-center items-center"
       style={{
-        backgroundImage: `url('https://portlandrentalhomes.com/wp-content/uploads/2023/12/Skills-1080x675.jpg')`,
+        backgroundImage: `url('https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg?auto=compress&cs=tinysrgb&w=600')`,
       }}
     >
       <div className="bg-black bg-opacity-50 p-10 rounded-xl max-w-3xl text-center">

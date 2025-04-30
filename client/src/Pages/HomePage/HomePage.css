@@ -1,9 +1,68 @@
-.sidebarBox{
-    position: sticky;
-    top: 0px;
-}
+/* HomePage.css */
 
-.postsBox{
+/* Posts list container */
+.postsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;          /* space-y-10 */
     width: 100%;
-   
-}
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding-right: 8px;    /* breathing room for scrollbar */
+  }
+  
+  /* Custom scrollbar for postsBox */
+  .postsBox::-webkit-scrollbar {
+    width: 6px;
+  }
+  .postsBox::-webkit-scrollbar-track {
+    background: #f1f5f9;   /* slate-200 */
+    border-radius: 3px;
+  }
+  .postsBox::-webkit-scrollbar-thumb {
+    background-color: #94a3b8; /* slate-400 */
+    border-radius: 3px;
+  }
+  
+  /* Optional: ensure main wrapper centers its content */
+  .homepage-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;    /* mt-10 */
+  }
+  
+  /* Center column (stories + posts) */
+  .center-column {
+    width: 44%;             /* matches w-[44%] */
+    padding: 0 2.5rem;      /* px-10 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Stories row override */
+  .story-row {
+    display: flex;
+    background-color: #f1f5f9; /* slate-200 */
+    gap: 0.5rem;             /* space-x-2 */
+    border: 1px solid #e2e8f0;
+    padding: 1rem;           /* p-4 */
+    border-radius: 0.375rem; /* rounded-md */
+    width: 100%;
+    margin-bottom: 3rem;     /* mb-[3rem] */
+  }
+  
+  /* Right sidebar */
+  .sidebar {
+    width: 30%;             /* w-[30%] */
+    padding-right: 2.5rem;   /* pr-10 */
+  }
+  
+  /* Responsive fallback */
+  @media (max-width: 1024px) {
+    .center-column,
+    .sidebar {
+      width: 100% !important;
+    }
+  }
+  

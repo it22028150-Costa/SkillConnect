@@ -40,7 +40,7 @@ const LearningProgress = () => {
   useEffect(() => {
     dispatch(getProgressUpdates(token));
   }, [dispatch]);
-
+// 👇 This function handles the form submission for both adding and editing updates
   const handleSubmit = (values) => {
     if (editing) {
       dispatch(updateProgressUpdate(token, editing.id, values));
@@ -53,7 +53,7 @@ const LearningProgress = () => {
     setIsModalOpen(false);
     setEditing(null);
   };
-
+// 👇 This function handles the template selection
   const handleTemplateChange = (value) => {
     if (value === "tutorial") {
       form.setFieldsValue({
